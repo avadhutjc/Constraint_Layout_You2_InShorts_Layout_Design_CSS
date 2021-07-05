@@ -1,0 +1,4 @@
+com/masai/constraint_layouts_you2/MainActivity.java
+ com.masai.constraint_layouts_you2.MainActivity
+com/masai/constraint_layouts_you2/BuildConfig.java
+ com.masai.constraint_layouts_you2.BuildConfig

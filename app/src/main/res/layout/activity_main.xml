@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="359dp"
+        android:layout_height="50dp"
+        android:background="@color/lightBlack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="45dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:foregroundGravity="center_horizontal"
+        android:src="@drawable/ic_back_button1"
+        app:layout_constraintEnd_toEndOf="@+id/view1"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="@string/smoking"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@id/ivBack"
+        tools:layout_editor_absoluteY="17dp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivHome"
+        android:layout_width="45dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_home1"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintEnd_toEndOf="@id/view1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CarViewOne"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_margin="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_cigarate11_foreground">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="22dp"
+        android:layout_height="63dp"
+        android:src="@drawable/ic_line_1"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="332dp"
+        android:layout_height="67dp"
+        android:text="@string/punjab_1st_in_india_to_ban_cigarette"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        tools:layout_editor_absoluteY="327dp">
+    </TextView>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="359dp"
+        android:layout_height="50dp"
+        android:background="@color/lightBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/published_at_12_00_pm"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/met1"
+        android:layout_width="364dp"
+        android:layout_height="240dp"
+        android:text="@string/mainbody"
+        android:textAlignment="textStart"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/view2"
+        app:layout_constraintStart_toStartOf="@id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
